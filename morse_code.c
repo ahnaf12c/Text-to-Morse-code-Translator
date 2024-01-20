@@ -18,7 +18,8 @@ int main()
     while (1)
     {
         printf("Please enter a string (enter 'q' to exit, or 'Q' to see the morse code of Q): ");
-        gets(string);
+        scanf("%[^\n]");
+        //gets(string);
         len = strlen(string);
 
         if (len == 1 && string[0] == 'q')
